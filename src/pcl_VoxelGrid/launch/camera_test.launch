@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="pcl_VoxelGrid" type="VoxelGrid_filter" name="pcl_VoxelGrid_node" output="screen"/>
+
+    <!-- 运行rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pcl_VoxelGrid)/rviz/showdepth.rviz"/>
+</launch>
+
